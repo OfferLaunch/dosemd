@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dose Rx — Precision. Delivered.</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=3">
+</head>
+<body>
+    <!-- Announcement Bar -->
+    <div class="announcement-bar">
+        <p>🔬 All peptides independently tested — COA included with every order &nbsp;|&nbsp; 🚚 Same-day fulfillment on orders before 2PM EST</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span style="font-size:24px;font-weight:800;letter-spacing:-0.5px;color:#0a1628;">Dose<span style="color:#0ea5e9;">Rx</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#products">Products</a>
+                <a href="#why-us">Why Dose Rx</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn" onclick="toggleCart()">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+            </div>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#products" onclick="toggleMobileMenu()">Products</a>
+        <a href="#why-us" onclick="toggleMobileMenu()">Why Dose Rx</a>
+        <a href="#faq" onclick="toggleMobileMenu()">FAQ</a>
+        <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">US-Manufactured · Research Grade · Third-Party Tested</div>
+            <h1>Precision.<br><span class="hero-accent">Delivered.</span></h1>
+            <p class="hero-sub">Research-grade peptides with 99%+ purity, independently verified. Every vial. Every time.</p>
+            <div class="hero-ctas">
+                <a href="#products" class="btn btn-primary">Shop Peptides</a>
+                <a href="#why-us" class="btn btn-secondary">See Our Testing</a>
+            </div>
+            <div class="hero-trust">
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                    <span>HPLC Verified</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                    <span>99%+ Purity</span>
+                </div>
+                <div class="trust-item">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+                    <span>Same-Day Ship</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-vial">
+                <div class="vial-glow"></div>
+                <div class="vial-shape">
+                    <div class="vial-cap"></div>
+                    <div class="vial-body">
+                        <div class="vial-label">
+                            <span class="vial-brand">Dose<span class="rx">Rx</span></span>
+                            <span class="vial-compound">RETATRUTIDE</span>
+                            <span class="vial-dose">10mg</span>
+                        </div>
+                        <div class="vial-liquid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof Bar -->
+    <section class="social-proof">
+        <div class="container">
+            <div class="proof-stats">
+                <div class="stat">
+                    <span class="stat-number" data-target="12847">0</span>
+                    <span class="stat-label">Orders Fulfilled</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="99">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label">Purity Guaranteed</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="4800">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Researchers Trust Us</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <span class="stat-number" data-target="48">0</span><span class="stat-suffix">h</span>
+                    <span class="stat-label">Avg. Delivery Time</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Research Peptides</h2>
+                <p>Every product ships with a Certificate of Analysis. US-manufactured. Independently verified.</p>
+            </div>
+            <div class="product-grid">
+                <!-- Retatrutide -->
+                <div class="product-card" data-animate>
+                    <div class="product-badge badge-hot">MOST POPULAR</div>
+                    <div class="product-image">
+                        <div class="product-vial vial-blue">
+                            <span class="product-vial-label">RET<br>10mg</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Retatrutide</h3>
+                        <p class="product-dose">10mg per vial</p>
+                        <p class="product-desc">Triple-agonist peptide targeting GLP-1, GIP, and glucagon receptors. Research-grade lyophilized powder.</p>
+                        <div class="product-meta">
+                            <span class="meta-tag">99.2% Pure</span>
+                            <span class="meta-tag">COA Included</span>
+                        </div>
+                        <div class="product-bottom">
+                            <button class="btn btn-add" onclick="addToCart('Retatrutide 10mg', 200)">View Product →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tirzepatide -->
+                <div class="product-card" data-animate>
+                    <div class="product-badge badge-new">HIGH DEMAND</div>
+                    <div class="product-image">
+                        <div class="product-vial vial-teal">
+                            <span class="product-vial-label">TRZ<br>10mg</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Tirzepatide</h3>
+                        <p class="product-dose">10mg per vial</p>
+                        <p class="product-desc">Dual GIP/GLP-1 receptor agonist. Highest purity available for research applications.</p>
+                        <div class="product-meta">
+                            <span class="meta-tag">99.4% Pure</span>
+                            <span class="meta-tag">COA Included</span>
+                        </div>
+                        <div class="product-bottom">
+                            <button class="btn btn-add" onclick="addToCart('Tirzepatide 10mg', 200)">View Product →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NAD+ -->
+                <div class="product-card" data-animate>
+                    <div class="product-image">
+                        <div class="product-vial vial-gold">
+                            <span class="product-vial-label">NAD+<br>500mg</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>NAD+</h3>
+                        <p class="product-dose">500mg per vial</p>
+                        <p class="product-desc">Nicotinamide adenine dinucleotide for cellular energy and longevity research applications.</p>
+                        <div class="product-meta">
+                            <span class="meta-tag">99.1% Pure</span>
+                            <span class="meta-tag">COA Included</span>
+                        </div>
+                        <div class="product-bottom">
+                            <button class="btn btn-add" onclick="addToCart('NAD+ 500mg', 150)">View Product →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sermorelin -->
+                <div class="product-card" data-animate>
+                    <div class="product-badge badge-value">BEST VALUE</div>
+                    <div class="product-image">
+                        <div class="product-vial vial-green">
+                            <span class="product-vial-label">SER<br>2mg</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Sermorelin</h3>
+                        <p class="product-dose">2mg per vial</p>
+                        <p class="product-desc">Growth hormone releasing peptide analog. Premium quality for advanced research protocols.</p>
+                        <div class="product-meta">
+                            <span class="meta-tag">99.3% Pure</span>
+                            <span class="meta-tag">COA Included</span>
+                        </div>
+                        <div class="product-bottom">
+                            <button class="btn btn-add" onclick="addToCart('Sermorelin 2mg', 200)">View Product →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Semaglutide Blend -->
+                <div class="product-card" data-animate>
+                    <div class="product-image">
+                        <div class="product-vial vial-purple">
+                            <span class="product-vial-label">SEM<br>BLEND</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Semaglutide Blend</h3>
+                        <p class="product-dose">Custom blend</p>
+                        <p class="product-desc">Proprietary GLP-1 receptor agonist blend optimized for research efficiency and results.</p>
+                        <div class="product-meta">
+                            <span class="meta-tag">99.0% Pure</span>
+                            <span class="meta-tag">COA Included</span>
+                        </div>
+                        <div class="product-bottom">
+                            <button class="btn btn-add" onclick="addToCart('Semaglutide Blend', 180)">View Product →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us / Comparison -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Researchers Choose Dose Rx</h2>
+                <p>Not all peptides are created equal. Here's how we compare.</p>
+            </div>
+            <div class="comparison-table">
+                <div class="comp-row comp-header">
+                    <div class="comp-feature">Feature</div>
+                    <div class="comp-us">Dose<span class="rx">Rx</span></div>
+                    <div class="comp-them">Typical Suppliers</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-feature">Purity Verification</div>
+                    <div class="comp-us"><span class="check">✓</span> HPLC + Independent 3rd Party</div>
+                    <div class="comp-them"><span class="cross">✗</span> Single or no COA</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-feature">Purity Level</div>
+                    <div class="comp-us"><span class="check">✓</span> 99%+ Ultra-Pure</div>
+                    <div class="comp-them"><span class="cross">✗</span> 95-98% Research Grade</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-feature">Manufacturing</div>
+                    <div class="comp-us"><span class="check">✓</span> US-Based GMP Facilities</div>
+                    <div class="comp-them"><span class="cross">✗</span> Overseas / Unknown Origin</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-feature">Sterility</div>
+                    <div class="comp-us"><span class="check">✓</span> 0.22µm Sterile Filtration</div>
+                    <div class="comp-them"><span class="cross">✗</span> Non-Sterile Prep</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-feature">Shipping</div>
+                    <div class="comp-us"><span class="check">✓</span> Same-Day Cold Chain</div>
+                    <div class="comp-them"><span class="cross">✗</span> 3-7 Day Standard</div>
+                </div>
+                <div class="comp-row">
+                    <div class="comp-feature">Batch Tracking</div>
+                    <div class="comp-us"><span class="check">✓</span> Full Traceability</div>
+                    <div class="comp-them"><span class="cross">✗</span> No Accountability</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon">🔬</div>
+                    <h3>Third-Party Tested</h3>
+                    <p>Every batch independently verified via HPLC and LC-MS analysis. Public COAs available.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">🇺🇸</div>
+                    <h3>US Manufactured</h3>
+                    <p>Produced in GMP-compliant facilities across California, Louisiana, and Florida.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">❄️</div>
+                    <h3>Cold Chain Shipping</h3>
+                    <p>Temperature-controlled logistics ensure product integrity from facility to your door.</p>
+                </div>
+                <div class="trust-card">
+                    <div class="trust-icon">📋</div>
+                    <h3>COA With Every Order</h3>
+                    <p>Certificate of Analysis included — know exactly what you're getting, every time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What purity level are your peptides?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All Dose Rx peptides are manufactured to 99%+ purity standards. Each batch is verified via HPLC and LC-MS testing, with results documented in the Certificate of Analysis (COA) included with every order.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Where are your peptides manufactured?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>All our peptides are manufactured in US-based, GMP-compliant facilities. We work with established manufacturers across California, Louisiana, and Florida to ensure the highest quality standards.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>How fast do you ship?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Orders placed before 2PM EST ship same day. We use cold chain logistics with temperature-controlled packaging to ensure product integrity. Most domestic orders arrive within 1-2 business days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Do you provide Certificates of Analysis?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes. Every single order ships with a COA documenting purity, identity, and sterility testing results. We also offer batch-level tracking for complete transparency.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>Are these peptides for human consumption?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>No. All Dose Rx products are sold strictly for research and laboratory use only. They are not intended for human consumption, veterinary use, or any therapeutic application.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" onclick="toggleFaq(this)">
+                        <span>What is your return policy?</span>
+                        <svg class="faq-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We stand behind every product. If you receive a product that doesn't meet our stated purity specifications, we'll replace it or issue a full refund within 30 days of purchase.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to elevate your research?</h2>
+            <p>Join thousands of researchers who trust Dose Rx for precision-grade peptides.</p>
+            <a href="#products" class="btn btn-primary btn-lg">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <span style="font-size:20px;font-weight:800;letter-spacing:-0.5px;color:#fff;">Dose<span style="color:#0ea5e9;">Rx</span></span>
+                    <p>Research-grade peptides with uncompromising quality. US-manufactured, independently tested, precision delivered.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#products">Products</a>
+                    <a href="#why-us">Why Dose Rx</a>
+                    <a href="#faq">FAQ</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="mailto:support@doserx.co">support@doserx.co</a>
+                    <a href="#">Shipping Policy</a>
+                    <a href="#">Return Policy</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Disclaimer</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>⚠️ <strong>For Research Use Only:</strong> All products sold by Dose Rx are intended strictly for in-vitro research and laboratory use only. These products are NOT intended for human consumption, veterinary use, or any diagnostic or therapeutic purpose. They are not drugs, supplements, or food products. They have not been evaluated, approved, or authorized by the FDA or any regulatory body. By purchasing, you confirm these products will be used solely for legitimate research purposes.</p>
+                <p class="copyright">© 2026 Dose Rx. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Slide-out Cart -->
+    <div class="cart-overlay" id="cartOverlay" onclick="toggleCart()"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span>Total</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="btn btn-primary btn-full" onclick="checkout()">Proceed to Checkout</button>
+            <p class="cart-secure">🔒 Secure checkout powered by Stripe</p>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
+</body>
+</html>
